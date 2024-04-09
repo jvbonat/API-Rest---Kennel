@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h4>Kennel System</h4>
+
+    <section id="main">
+
+        <section id="firstSection">
+
+            <ul class="dogsList">
+
+            </ul>
+
+        </section>
+        <hr>
+        <section id="secondSection">
+
+            <h4>Dog registration</h4>
+
+            <input type="text" name="name" id="name" placeholder="Define the dog's name">
+            <br>
+            <br>
+            <input type="text" name="breed" id="breed" placeholder="Define the dog's breed">
+            <br>
+            <br>
+            <input type="text" name="weigth" id="weigth" placeholder="Define the dog's weigth">
+            <br>
+            <br>
+            <input type="text" name="age" id="age" placeholder="Define the dog's age">
+            <br>
+            <br>
+            <button class="btn-register" onclick="createDog()">Register</button>
+            <hr>
+        </section>
+
+        <section id="thirdSection">
+
+            <h4>Dog Updating</h4>
+
+            <input type="hidden" name="idEdit" id="idEdit">
+            <input type="text" name="nameEdit" id="nameEdit" placeholder="Define the dog's name">
+            <br>
+            <br>
+            <input type="text" name="breedEdit" id="breedEdit" placeholder="Define the dog's breed">
+            <br>
+            <br>
+            <input type="text" name="weigthEdit" id="weigthEdit" placeholder="Define the dog's weigth">
+            <br>
+            <br>
+            <input type="text" name="ageEdit" id="ageEdit" placeholder="Define the dog's age">
+            <br>
+            <br>
+            <button class="btn-register" onclick="updateDogInfo()">Update</button>
+
+
+        </section>
+
+
+
+    </section>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+<script src="index.js"></script>
+</html>
